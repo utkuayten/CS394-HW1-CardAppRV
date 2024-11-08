@@ -23,7 +23,7 @@ class CardDetailActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        //setContentView(R.layout.activity_user_detail)
+
         val binding: ActivityCardDetailBinding = DataBindingUtil.setContentView(this,
             R.layout.activity_card_detail
         )
@@ -40,11 +40,11 @@ class CardDetailActivity : AppCompatActivity() {
             spannable.setSpan(UnderlineSpan(), 0, cardType.length, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE)
         }
 
-// Set the underlined text back to the TextView
 
         binding.nameView.text  = userName
         binding.cardNumber.text = formattedCardNumber
         binding.cardType.text = spannable
+        binding.cardAmount.text = cardAmount
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
