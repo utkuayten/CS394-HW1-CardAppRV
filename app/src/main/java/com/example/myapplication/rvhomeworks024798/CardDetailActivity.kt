@@ -6,7 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.databinding.DataBindingUtil
-import com.example.myapplication.rvhomeworks024798.databinding.ActivityUserDetailBinding
+import com.example.myapplication.rvhomeworks024798.databinding.ActivityCardDetailBinding
 
 class CardDetailActivity : AppCompatActivity() {
     companion object{
@@ -20,8 +20,8 @@ class CardDetailActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         //setContentView(R.layout.activity_user_detail)
-        val binding: ActivityUserDetailBinding = DataBindingUtil.setContentView(this,
-            R.layout.activity_user_detail
+        val binding: ActivityCardDetailBinding = DataBindingUtil.setContentView(this,
+            R.layout.activity_card_detail
         )
 
         val userName = intent.getStringExtra(OWNER_NAME)
@@ -29,8 +29,11 @@ class CardDetailActivity : AppCompatActivity() {
         val cardType = intent.getStringExtra(CARD_TYPE)
         val cardAmount = intent.getStringExtra(CARD_AMOUNT)
 
+
+        val formattedCardNumber = cardNumber?.chunked(4)?.joinToString(" - ") ?: ""
+
         binding.nameView.text  = userName
-        binding.cardNumber.text = cardNumber
+        binding.cardNumber.text = formattedCardNumber
         binding.cardType.text = cardType
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
