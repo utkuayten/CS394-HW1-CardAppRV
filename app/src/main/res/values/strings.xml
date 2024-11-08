@@ -1,0 +1,115 @@
+<resources>
+    <string name="app_name">RvHomeworkS024798</string>
+    <string-array name="first_name_array">
+        <item>Fons</item>
+        <item>Bobby</item>
+        <item>Mandie</item>
+        <item>Liza</item>
+        <item>Lissi</item>
+        <item>Marthena</item>
+        <item>Melisandra</item>
+        <item>Roxine</item>
+        <item>Jacobo</item>
+        <item>Teirtza</item>
+        <item>Rip</item>
+        <item>Karyn</item>
+        <item>Erv</item>
+        <item>Clemmy</item>
+        <item>Leia</item>
+        <item>Hugo</item>
+        <item>Desmond</item>
+        <item>Mollie</item>
+        <item>Portia</item>
+        <item>Lian</item>
+    </string-array>
+    <string-array name="last_name_array">
+        <item>Caiger</item>
+        <item>Auty</item>
+        <item>Dawidowicz</item>
+        <item>Hanratty</item>
+        <item>Snelman</item>
+        <item>Steely</item>
+        <item>McGurk</item>
+        <item>Barnfather</item>
+        <item>Mitton</item>
+        <item>Rubinchik</item>
+        <item>Kevis</item>
+        <item>Steinham</item>
+        <item>Beatson</item>
+        <item>Bradmore</item>
+        <item>Timbridge</item>
+        <item>MacGilpatrick</item>
+        <item>Gregs</item>
+    </string-array>
+    <string-array name="card_number">
+        <item>378041535169492</item>
+        <item>5100170388618968</item>
+        <item>337941336221253</item>
+        <item>374288113576200</item>
+        <item>374288500823884</item>
+        <item>374622040486762</item>
+        <item>633492790488758045</item>
+        <item>374288853301850</item>
+        <item>374288237107437</item>
+        <item>374622630384039</item>
+        <item>6334130436912767304</item>
+        <item>5389958940929713</item>
+        <item>6767929348520661603</item>
+        <item>4017958846020396</item>
+        <item>5150824441955127</item>
+        <item>5588765951477808</item>
+        <item>4317498823651</item>
+        <item>4041370968315</item>
+        <item>5256786451554814</item>
+        <item>50203998546014163</item>
+    </string-array>
+    <string-array name="card_type">
+        <item>American Express</item>
+        <item>MasterCard</item>
+        <item>American Express</item>
+        <item>American Express</item>
+        <item>American Express</item>
+        <item>American Express</item>
+        <item>Solo</item>
+        <item>American Express</item>
+        <item>American Express</item>
+        <item>American Express</item>
+        <item>Solo</item>
+        <item>MasterCard</item>
+        <item>Solo</item>
+        <item>Visa</item>
+        <item>MasterCard</item>
+        <item>MasterCard</item>
+        <item>Visa</item>
+        <item>Visa</item>
+        <item>MasterCard</item>
+    </string-array>
+    <string-array name="amount">
+        <item>$7426.92</item>
+        <item>$9564.23</item>
+        <item>$5871.51</item>
+        <item>$1537.40</item>
+        <item>$6427.25</item>
+        <item>$4080.37</item>
+        <item>$8111.66</item>
+        <item>$5365.46</item>
+        <item>$1854.86</item>
+        <item>$1796.72</item>
+        <item>$7979.84</item>
+        <item>$7166.15</item>
+        <item>$414.23</item>
+        <item>$6846.35</item>
+        <item>$1267.38</item>
+        <item>$3497.40</item>
+        <item>$7849.94</item>
+        <item>$8230.31</item>
+        <item>$1634.29</item>
+    </string-array>
+
+
+
+
+
+
+
+</resources>
