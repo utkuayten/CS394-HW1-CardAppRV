@@ -4,6 +4,7 @@
     <string name="card_owner">Card Owner</string>
     <string name="cards">CARDS</string>
     <string-array name="first_name_array">
+        <item>Kadir</item>
         <item>Fons</item>
         <item>Bobby</item>
         <item>Mandie</item>
@@ -26,6 +27,7 @@
         <item>Lian</item>
     </string-array>
     <string-array name="last_name_array">
+        <item>Kılıç</item>
         <item>Caiger</item>
         <item>Auty</item>
         <item>Dawidowicz</item>
@@ -45,6 +47,7 @@
         <item>Gregs</item>
     </string-array>
     <string-array name="card_number">
+        <item>13720906155102</item>
         <item>378041535169492</item>
         <item>5100170388618968</item>
         <item>337941336221253</item>
@@ -67,6 +70,7 @@
         <item>50203998546014163</item>
     </string-array>
     <string-array name="card_type">
+        <item>TROY</item>
         <item>American Express</item>
         <item>MasterCard</item>
         <item>American Express</item>
@@ -88,6 +92,7 @@
         <item>MasterCard</item>
     </string-array>
     <string-array name="amount">
+        <item>₺3550.50</item>
         <item>$7426.92</item>
         <item>$9564.23</item>
         <item>$5871.51</item>
