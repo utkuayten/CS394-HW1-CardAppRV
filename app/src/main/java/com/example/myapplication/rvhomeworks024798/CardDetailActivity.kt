@@ -1,12 +1,16 @@
 package com.example.myapplication.rvhomeworks024798
 
 import android.os.Bundle
+import android.text.SpannableString
+import android.text.Spanned
+import android.text.style.UnderlineSpan
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.databinding.DataBindingUtil
 import com.example.myapplication.rvhomeworks024798.databinding.ActivityCardDetailBinding
+import java.util.Locale
 
 class CardDetailActivity : AppCompatActivity() {
     companion object{
@@ -24,17 +28,23 @@ class CardDetailActivity : AppCompatActivity() {
             R.layout.activity_card_detail
         )
 
-        val userName = intent.getStringExtra(OWNER_NAME)
+        val userName = intent.getStringExtra(OWNER_NAME)?.uppercase()
         val cardNumber = intent.getStringExtra(CARD_NUMBER)
         val cardType = intent.getStringExtra(CARD_TYPE)
         val cardAmount = intent.getStringExtra(CARD_AMOUNT)
 
 
         val formattedCardNumber = cardNumber?.chunked(4)?.joinToString(" - ") ?: ""
+        val spannable = SpannableString(cardType)
+        if (cardType != null) {
+            spannable.setSpan(UnderlineSpan(), 0, cardType.length, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE)
+        }
+
+// Set the underlined text back to the TextView
 
         binding.nameView.text  = userName
         binding.cardNumber.text = formattedCardNumber
-        binding.cardType.text = cardType
+        binding.cardType.text = spannable
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
